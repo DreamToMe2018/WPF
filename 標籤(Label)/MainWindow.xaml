@@ -1,0 +1,23 @@
+﻿<Window x:Class="標籤_Label_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:標籤_Label_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Choose _A" Target="{Binding ElementName=txtA}"/>
+            <TextBox x:Name="txtA"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label Content="Choose _B" Target="{Binding ElementName=txtB}"/>
+            <TextBox x:Name="txtB"/>
+        </StackPanel>
+    </Grid>
+</Window>

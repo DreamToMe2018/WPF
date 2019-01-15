@@ -1,0 +1,24 @@
+﻿<Window x:Class="背景畫刷和前景畫刷.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:背景畫刷和前景畫刷"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="test1" Content="Button1" HorizontalAlignment="Left" Margin="178,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="test2" Content="Button2" HorizontalAlignment="Left" Margin="272,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="test3" Content="Button" HorizontalAlignment="Left" Margin="272,188,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.055,1.962"/>
+        <Button Name="test4" Content="Button" HorizontalAlignment="Left" Margin="375,150,0,0" VerticalAlignment="Top" Width="75"/>
+        
+        <Button Background="LightPink" Content="Button" HorizontalAlignment="Left" Margin="522,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="614,150,0,0" VerticalAlignment="Top" Width="75">
+            <Button.Background>
+                <SolidColorBrush Color="Black"></SolidColorBrush>
+            </Button.Background>
+        </Button>
+        <Button Background="#FFFF0000" Content="Button" HorizontalAlignment="Left" Margin="614,188,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

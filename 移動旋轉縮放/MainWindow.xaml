@@ -1,0 +1,19 @@
+﻿<Window x:Class="移動旋轉縮放.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:移動旋轉縮放"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="canvas" ManipulationInertiaStarting="canvas_ManipulationInertiaStarting" ManipulationDelta="canvas_ManipulationDelta">
+            <Image Source="C:\Users\USER\source\repos\WPF\冒泡路由\1521129036650.jpg" InkCanvas.Top="10"
+               InkCanvas.Left="10" Width="200" IsManipulationEnabled="True" Height="419" Canvas.Left="239">
+                <Image.RenderTransform>
+                    <MatrixTransform/>
+                </Image.RenderTransform>
+            </Image>
+        </Canvas>
+    </Grid>
+</Window>

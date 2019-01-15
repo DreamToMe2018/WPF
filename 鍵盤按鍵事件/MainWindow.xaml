@@ -1,0 +1,16 @@
+﻿<Window x:Class="鍵盤按鍵事件.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:鍵盤按鍵事件"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Type here:" HorizontalAlignment="Left" Margin="84,21,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="164,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" KeyUp="KeyEvent" KeyDown="KeyEvent" TextInput="TextBox_TextInput"/>
+        <ListBox Name="lstMessages" HorizontalAlignment="Left" Height="258" Margin="84,51,0,0" VerticalAlignment="Top" Width="252"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="84,325,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="261,375,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

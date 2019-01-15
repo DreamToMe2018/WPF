@@ -1,0 +1,33 @@
+﻿<Window x:Class="Grid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Grid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--ShowGridLines="True"可以看到分隔線-->
+    <Grid ShowGridLines="True">
+        <!--要分欄跟列的話要加<Grid.RowDefinitions>跟<Grid.ColumnDefinitions>-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--Width="100"條大小Width="Auto"自動條大小Width="*"按照比例設定方式-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Grid.RowSpan="2" Grid.ColumnSpan=""可以往下延伸或往橫向延伸-->
+        <Button Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Content="Top Left" />
+        <Button Grid.Row="0" Grid.Column="1" Content="Middle Left" />
+        <Button Grid.Row="1" Grid.Column="2" Content="Bottom Right"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="Bottom Middle" />
+
+        <!--可以做出分割線-->
+        <GridSplitter Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                      ShowsPreview="False" Margin="0,-10,85,0"/>
+    </Grid>
+</Window>

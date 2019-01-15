@@ -1,0 +1,24 @@
+﻿<Window x:Class="Grid.Grid_like_DockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Grid"
+        mc:Ignorable="d"
+        Title="Grid_like_DockPanel" Height="450" Width="800">
+    <!--Height="*"代表Margin="10"設多大他就多大-->
+    <!--UseLayoutRounding在特定窗口變模糊，可以改成True-->
+    <Grid ShowGridLines="True" UseLayoutRounding="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBox Grid.Row="0" Margin="10" Text="This is a Test"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="10,10,2,10" Padding="3" Content="OK"/>
+            <Button Margin="2,10,10,10" Padding="3" Content="Cancel"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
